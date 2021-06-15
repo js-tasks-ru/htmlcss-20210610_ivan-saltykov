@@ -1,0 +1,16 @@
+
+.main{
+    height: 300px;
+    background-color: #F9FAFC;
+}
+.footer{
+    text-align: center;
+}
+.footer__discription{
+    display: inline-block;
+    max-width: 650px;
+}
+.page__box{
+    max-width: 1110px;
+    margin:0 auto;
+}
