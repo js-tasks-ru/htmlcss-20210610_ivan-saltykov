@@ -1,9 +1,7 @@
 /* Стилизация кнопки */
 .button_primary{
-    width: 189px;
-    height: 48px;
-    padding-top: 15px;
-    padding-bottom: 14px;
+    display:inline-block;
+    padding: 16px 14px;
     border:none;
     border-radius: 8px;
     background-color: var(--blue);
@@ -16,31 +14,25 @@
     text-align: center;
 }
 .button_primary:hover{
-    width: 189px;
-    height: 48px;
     border:none;
     border-radius: 8px;
-    background-color: #2342C0;
+    background-color: var(--dark-blue);
     color: var(--white);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     cursor: pointer;
 }
 .button_primary:disabled{
-    width: 189px;
-    height: 48px;
     border:none;
     border-radius: 8px;
     background-color: var(--blue);
     opacity: 0.5;
     color: var(--white);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     cursor: not-allowed;
+    pointer-events: none
 }
 .button_secondary{
-    width: 189px;
-    height: 48px;
-    padding-top: 15px;
-    padding-bottom: 14px;
+    display: inline-block;
+    padding: 16px 14px;
     border:none;
     border-radius: 8px;
     background-color: var(--purple);
@@ -53,31 +45,26 @@
     text-align: center;
 }
 .button_secondary:hover{
-    width: 189px;
-    height: 48px;
     border:none;
     border-radius: 8px;
-    background-color: #5028C6;
+    background-color: var(--dark-pupple);
     color: var(--white);
     cursor: pointer;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 .button_secondary:disabled{
-    width: 189px;
-    height: 48px;
     border:none;
     border-radius: 8px;
     background-color: var(--purple);
     opacity: 0.5;
     color: var(--white);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     cursor: not-allowed;
+    pointer-events: none
 }
 .button_alternate{
-    width: 189px;
-    height: 48px;
-    padding-top: 15px;
-    padding-bottom: 14px;
-    border:1px solid #ACB5BD;
+    display: inline-block;
+    padding: 16px 14px;
+    border:1px solid var(--grey-3);
     background-color:var(--white);
     box-sizing: border-box;
     border-radius: 8px;
@@ -89,21 +76,19 @@
     text-align: center;
 }
 .button_alternate:hover{
-    width: 189px;
-    height: 48px;
-    border:1px solid #212429;
+    border:1px solid var(--black);
     background-color:var(--white);
     box-sizing: border-box;
     border-radius: 8px;
     cursor: pointer;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 .button_alternate:disabled{
-    width: 189px;
-    height: 48px;
-    border:1px solid #ACB5BD;
+    border:1px solid var(--grey-3);
     background-color:var(--white);
     box-sizing: border-box;
     opacity: 0.5;
     border-radius: 8px;
     cursor: not-allowed;
+    pointer-events: none
 }
