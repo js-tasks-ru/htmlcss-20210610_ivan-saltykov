@@ -1,12 +1,5 @@
 /* Стилизация аккордеона */
   
-.accordion  * {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-}
 .accordion__item{
     margin-bottom: 8px;
 }
@@ -16,20 +9,27 @@
 .accordion__details{  
     border: 1px solid #ACB5BD;
     border-radius: 8px;
-    padding:24px 32px; 
+    padding:24px 32px;
 }
 .accordion__details[open] .accordion__narow{
-    transform: rotate(180deg)translate(0, +10%);
+    transform: rotate(180deg) translate(0, +10%);
 }
 .accordion__summary{  
-    display:block;
+    display: block; /* если не добовлять в Google Chrome отображается ::marker */
     outline: none;
 }
-.accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+.accordion__summary::-webkit-details-marker{  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
 }
-.acordion__summary_flex{
+.acordion__summary_flex{ /* wraper для Safari, flexbox с summary  не работает в Safari*/
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+}
+.acordion__summary_flex, .accordion__description{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
 }
