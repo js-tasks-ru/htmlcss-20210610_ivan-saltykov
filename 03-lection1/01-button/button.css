@@ -11,20 +11,18 @@
     line-height: 19px;
     text-align: center;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    cursor: pointer;
 }
 .button_primary{
     background-color: var(--blue);
-    color: var(--white);
-    
+    color: var(--white);   
 }
 .button_primary:hover{
-    background-color: var(--dark-blue);
-    cursor: pointer;
+    background-color: var(--dark-blue); 
 }
 .button_primary:disabled{
     opacity: 0.5;
-    cursor: not-allowed;
-    pointer-events: none
+    pointer-events: none;
 }
 .button_secondary{
     background-color: var(--purple);
@@ -33,12 +31,10 @@
 .button_secondary:hover{
     background-color: var(--dark-pupple);
     color: var(--white);
-    cursor: pointer;
 }
 .button_secondary:disabled{
     opacity: 0.5;
-    cursor: not-allowed;
-    pointer-events: none
+    pointer-events: none;
 }
 .button_alternate{
     border:1px solid var(--grey-3);
@@ -46,11 +42,9 @@
 }
 .button_alternate:hover{
     border:1px solid var(--black);
-    background-color:var(--white);
-    cursor: pointer;   
+    background-color:var(--white);  
 }
 .button_alternate:disabled{
     opacity: 0.5;
-    cursor: not-allowed;
-    pointer-events: none
+    pointer-events: none;
 }
