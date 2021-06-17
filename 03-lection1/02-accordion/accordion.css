@@ -15,18 +15,19 @@
     transform: rotate(180deg) translate(0, +10%);
 }
 .accordion__summary{  
-    display: block; /* если не добовлять в Google Chrome отображается ::marker */
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer; /* если не добовлять в Google Chrome отображается ::marker */
     outline: none;
 }
 .accordion__summary::-webkit-details-marker{  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
 }
-.acordion__summary_flex{ /* wraper для Safari, flexbox с summary  не работает в Safari*/
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
+.accordion__narow{
+    position: absolute;
+    right: 32px;
 }
-.acordion__summary_flex, .accordion__description{
+.accordion__summary, .accordion__description{
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
