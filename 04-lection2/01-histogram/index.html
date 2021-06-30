@@ -2,10 +2,60 @@
 <!-- Страница с гистограммой -->
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="../../assets/css/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./histogram.css">
     </head>
     <body>
-
+        <div style="padding: 20px;">
+            <div class="histogram">
+                <div class="histogram__header">
+                    <div class="histogram__header-part">
+                        <span class="histogram__header-title">Total orders</span>
+                        <span class="histogram__counter">50399</span>
+                    </div>
+                    <div lass="histogram__header-part">
+                        <a href="#" class="histogram__filter">View all</a>
+                    </div>                   
+                </div>
+                <div class="histogram__bars">
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                    <div class="histogram__bar"></div>
+                </div>
+            </div>
+        </div>
     </body>
+    <script>
+        let histogramBars = document.getElementsByClassName("histogram__bar");
+        Array.from(histogramBars).forEach((bar) => {
+            bar.style.height = `${Math.floor(Math.random() * 100) + 1}%`;
+        });
+    </script>
 </html>
